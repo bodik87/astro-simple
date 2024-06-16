@@ -1,0 +1,25 @@
+---
+import { ViewTransitions } from "astro:transitions";
+import BaseHead from "../components/BaseHead.astro";
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <ViewTransitions />
+    <BaseHead
+      title={"Bodik - WebSite - Bohdan Shulika"}
+      description={"Bodik, Богдан Шуліка, Wev Developer, WebComplex, Bohdan Shulika, Wev Developer, створення сайтів, Bohdan Shulika, Frontend Developer, React, Next.js"}
+    />
+  </head>
+  <body class="bg-zinc-100 text-zinc-900 min-h-screen flex flex-col">
+    <Header />
+    <main class="mx-auto mb-6 max-w-5xl w-full py-3 px-5">
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>

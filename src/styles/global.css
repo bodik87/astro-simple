@@ -1,0 +1,30 @@
+@font-face {
+  font-family: "MyFont";
+  src: url("/fonts/normal.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "MyFont";
+  src: url("/fonts/medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "MyFont";
+  src: url("/fonts/bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: bold;
+  font-display: swap;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+  font-family: "MyFont", sans-serif;
+}
+
+.title {
+  @apply mt-3 text-lg border-l-2 border-[#FF5D01] pl-4 leading-8;
+}

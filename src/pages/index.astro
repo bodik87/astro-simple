@@ -1,0 +1,31 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+---
+
+<MainLayout title="Home Page">
+  <h1 class="title">
+    Bohdan Shulika. <b class="text-[#FF5D01]">Web Developer</b>
+  </h1>
+
+  <div
+    class="mt-12 md:mt-6 flex flex-col justify-center md:flex-row md:items-center gap-4"
+  >
+    <div class="text-center w-full text-2xl">
+      Comprehensive website creation
+      <p class="mt-1 md:mt-3 text-lg">
+        with <span
+          class="inline-block bg-[#FF5D01] font-medium px-2 py-1 text-white -skew-x-3"
+          >FREE</span
+        > registration in Google Search
+      </p>
+    </div>
+
+    <a
+      href="https://avtokonder.vercel.app/"
+      target="_blank"
+      class="flex justify-center w-full mx-auto max-w-xs lg:mr-20"
+    >
+      <img src="/lighthouse.jpg" alt="Banner" class="rounded-md" />
+    </a>
+  </div>
+</MainLayout>

@@ -1,0 +1,22 @@
+---
+import HeaderLink from "./HeaderLink.astro";
+import { navLinks } from "../../data";
+---
+
+<header class="border-b h-14 flex flex-col justify-center bg-white">
+  <div class="mx-auto max-w-5xl w-full px-5 flex justify-between items-center">
+    <a
+      href="/"
+      class="inline-flex items-center bg-[#3F3A3E] rounded -skew-x-6 text-white px-2 py-1"
+    >
+      bodik<span class="text-[#60ffa8]">.website</span>
+    </a>
+    <div class="flex gap-x-5">
+      {
+        navLinks.map((link) => (
+          <HeaderLink href={link.href}>{link.name}</HeaderLink>
+        ))
+      }
+    </div>
+  </div>
+</header>
